@@ -36,7 +36,7 @@ const config: PlaywrightTestConfig = {
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
-    ['html', { outputFolder: `${reportDir}/playwright-html` }],
+    ['html', { outputFolder: `${reportDir}/playwright-html`, open: 'never' }],
     ['junit', { outputFile: `${reportDir}/playwright-junit/results.xml` }],
     ['list']
   ],
