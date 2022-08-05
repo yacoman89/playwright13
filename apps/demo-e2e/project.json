@@ -1,0 +1,14 @@
+{
+  "projectType": "application",
+  "root": "apps/demo-e2e",
+  "sourceRoot": "apps/demo-e2e/src",
+  "prefix": "playwright13",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/workspace:run-script",
+      "options": {
+        "script": "playwright test -- --config apps/demo-e2e/playwright.config.ts"
+      }
+    }
+  }
+}
